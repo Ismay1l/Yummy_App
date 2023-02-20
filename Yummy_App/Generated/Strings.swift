@@ -10,17 +10,11 @@ import Foundation
 // swiftlint:disable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 internal enum L10n {
-  /// Something
-  internal static let something = L10n.tr("Localizable", "something", fallback: "Something")
-  /// Third page
-  internal static let thirdPage = L10n.tr("Localizable", "third_page", fallback: "Third page")
   /// Localizable.strings
   ///   Yummy_App
   /// 
   ///   Created by Ismayil Ismayilov on 20.02.23.
-  internal static let titleHomePage = L10n.tr("Localizable", "title_home_page", fallback: "Home page")
-  /// Second page
-  internal static let titleSecondPage = L10n.tr("Localizable", "title_second_page", fallback: "Second page")
+  internal static let titleNextButton = L10n.tr("Localizable", "title_next_button", fallback: "Next")
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:enable nesting type_body_length type_name vertical_whitespace_opening_braces

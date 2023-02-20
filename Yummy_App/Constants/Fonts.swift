@@ -5,7 +5,7 @@
 //  Created by Ismayil Ismayilov on 20.02.23.
 //
 
-import Foundation
+import UIKit
 
-//MARK: - Custom Font
-let customFont = UIFont(name: "", size: <#T##CGFloat#>)
+//MARK: - Medium
+let mediumFont = UIFont(name: "Labrada-Medium", size: 22)

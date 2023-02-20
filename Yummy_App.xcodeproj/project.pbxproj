@@ -8,10 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		008E4CD792BD94F92606A176 /* Pods_Yummy_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3AEE7F1769A9D342A29076D /* Pods_Yummy_App.framework */; };
+		4B50C53029A3D1A40058D1CE /* WelcomeVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B50C52F29A3D1A40058D1CE /* WelcomeVCViewController.swift */; };
+		4B50C53429A3D6FB0058D1CE /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B50C53329A3D6FB0058D1CE /* OnboardingView.swift */; };
+		4B50C53A29A3D8CE0058D1CE /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B50C53929A3D8CE0058D1CE /* Fonts.swift */; };
+		4B50C55429A3D9470058D1CE /* Labrada-Italic-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4B50C53D29A3D9470058D1CE /* Labrada-Italic-VariableFont_wght.ttf */; };
+		4B50C55529A3D9470058D1CE /* Labrada-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4B50C53F29A3D9470058D1CE /* Labrada-Italic.ttf */; };
+		4B50C55629A3D9470058D1CE /* Labrada-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4B50C54029A3D9470058D1CE /* Labrada-ThinItalic.ttf */; };
+		4B50C55729A3D9470058D1CE /* Labrada-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4B50C54129A3D9470058D1CE /* Labrada-LightItalic.ttf */; };
+		4B50C55829A3D9470058D1CE /* Labrada-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4B50C54229A3D9470058D1CE /* Labrada-ExtraLight.ttf */; };
+		4B50C55929A3D9470058D1CE /* Labrada-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4B50C54329A3D9470058D1CE /* Labrada-BoldItalic.ttf */; };
+		4B50C55A29A3D9470058D1CE /* Labrada-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4B50C54429A3D9470058D1CE /* Labrada-Light.ttf */; };
+		4B50C55B29A3D9470058D1CE /* Labrada-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4B50C54529A3D9470058D1CE /* Labrada-ExtraLightItalic.ttf */; };
+		4B50C55C29A3D9470058D1CE /* Labrada-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4B50C54629A3D9470058D1CE /* Labrada-SemiBold.ttf */; };
+		4B50C55D29A3D9470058D1CE /* Labrada-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4B50C54729A3D9470058D1CE /* Labrada-BlackItalic.ttf */; };
+		4B50C55E29A3D9470058D1CE /* Labrada-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4B50C54829A3D9470058D1CE /* Labrada-Regular.ttf */; };
+		4B50C55F29A3D9470058D1CE /* Labrada-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4B50C54929A3D9470058D1CE /* Labrada-ExtraBoldItalic.ttf */; };
+		4B50C56029A3D9470058D1CE /* Labrada-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4B50C54A29A3D9470058D1CE /* Labrada-SemiBoldItalic.ttf */; };
+		4B50C56129A3D9470058D1CE /* Labrada-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4B50C54B29A3D9470058D1CE /* Labrada-ExtraBold.ttf */; };
+		4B50C56229A3D9470058D1CE /* Labrada-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4B50C54C29A3D9470058D1CE /* Labrada-Medium.ttf */; };
+		4B50C56329A3D9470058D1CE /* Labrada-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4B50C54D29A3D9470058D1CE /* Labrada-MediumItalic.ttf */; };
+		4B50C56429A3D9470058D1CE /* Labrada-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4B50C54E29A3D9470058D1CE /* Labrada-Black.ttf */; };
+		4B50C56529A3D9470058D1CE /* Labrada-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4B50C54F29A3D9470058D1CE /* Labrada-Thin.ttf */; };
+		4B50C56629A3D9470058D1CE /* Labrada-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4B50C55029A3D9470058D1CE /* Labrada-Bold.ttf */; };
+		4B50C56729A3D9470058D1CE /* Labrada-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4B50C55129A3D9470058D1CE /* Labrada-VariableFont_wght.ttf */; };
+		4B50C56829A3D9470058D1CE /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4B50C55229A3D9470058D1CE /* OFL.txt */; };
+		4B50C56929A3D9470058D1CE /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4B50C55329A3D9470058D1CE /* README.txt */; };
 		4B9B344F29A239CD0006710C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9B344E29A239CD0006710C /* AppDelegate.swift */; };
 		4B9B345129A239CD0006710C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9B345029A239CD0006710C /* SceneDelegate.swift */; };
 		4B9B345329A239CD0006710C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9B345229A239CD0006710C /* ViewController.swift */; };
-		4B9B345629A239CD0006710C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B9B345429A239CD0006710C /* Main.storyboard */; };
 		4B9B345829A239CE0006710C /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B9B345729A239CE0006710C /* Media.xcassets */; };
 		4B9B345B29A239CE0006710C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B9B345929A239CE0006710C /* LaunchScreen.storyboard */; };
 		4BD2F3B829A34FE000126309 /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = 4BD2F3B729A34FE000126309 /* swiftgen.yml */; };
@@ -19,14 +43,39 @@
 		4BF1A58429A3BF6E00222116 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF1A58229A3BF6E00222116 /* Strings.swift */; };
 		4BF1A58529A3BF6E00222116 /* XCAssets+Image+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF1A58329A3BF6E00222116 /* XCAssets+Image+Generated.swift */; };
 		4BF1A58729A3C05300222116 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BF1A58629A3C05300222116 /* Colors.xcassets */; };
+		4BF1A59029A3C89700222116 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF1A58F29A3C89700222116 /* UIViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B50C52F29A3D1A40058D1CE /* WelcomeVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVCViewController.swift; sourceTree = "<group>"; };
+		4B50C53329A3D6FB0058D1CE /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		4B50C53929A3D8CE0058D1CE /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		4B50C53D29A3D9470058D1CE /* Labrada-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Labrada-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		4B50C53F29A3D9470058D1CE /* Labrada-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Labrada-Italic.ttf"; sourceTree = "<group>"; };
+		4B50C54029A3D9470058D1CE /* Labrada-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Labrada-ThinItalic.ttf"; sourceTree = "<group>"; };
+		4B50C54129A3D9470058D1CE /* Labrada-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Labrada-LightItalic.ttf"; sourceTree = "<group>"; };
+		4B50C54229A3D9470058D1CE /* Labrada-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Labrada-ExtraLight.ttf"; sourceTree = "<group>"; };
+		4B50C54329A3D9470058D1CE /* Labrada-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Labrada-BoldItalic.ttf"; sourceTree = "<group>"; };
+		4B50C54429A3D9470058D1CE /* Labrada-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Labrada-Light.ttf"; sourceTree = "<group>"; };
+		4B50C54529A3D9470058D1CE /* Labrada-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Labrada-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		4B50C54629A3D9470058D1CE /* Labrada-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Labrada-SemiBold.ttf"; sourceTree = "<group>"; };
+		4B50C54729A3D9470058D1CE /* Labrada-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Labrada-BlackItalic.ttf"; sourceTree = "<group>"; };
+		4B50C54829A3D9470058D1CE /* Labrada-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Labrada-Regular.ttf"; sourceTree = "<group>"; };
+		4B50C54929A3D9470058D1CE /* Labrada-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Labrada-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		4B50C54A29A3D9470058D1CE /* Labrada-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Labrada-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		4B50C54B29A3D9470058D1CE /* Labrada-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Labrada-ExtraBold.ttf"; sourceTree = "<group>"; };
+		4B50C54C29A3D9470058D1CE /* Labrada-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Labrada-Medium.ttf"; sourceTree = "<group>"; };
+		4B50C54D29A3D9470058D1CE /* Labrada-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Labrada-MediumItalic.ttf"; sourceTree = "<group>"; };
+		4B50C54E29A3D9470058D1CE /* Labrada-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Labrada-Black.ttf"; sourceTree = "<group>"; };
+		4B50C54F29A3D9470058D1CE /* Labrada-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Labrada-Thin.ttf"; sourceTree = "<group>"; };
+		4B50C55029A3D9470058D1CE /* Labrada-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Labrada-Bold.ttf"; sourceTree = "<group>"; };
+		4B50C55129A3D9470058D1CE /* Labrada-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Labrada-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		4B50C55229A3D9470058D1CE /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		4B50C55329A3D9470058D1CE /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		4B9B344B29A239CD0006710C /* Yummy_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yummy_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B9B344E29A239CD0006710C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4B9B345029A239CD0006710C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4B9B345229A239CD0006710C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4B9B345529A239CD0006710C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4B9B345729A239CE0006710C /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		4B9B345A29A239CE0006710C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B9B345C29A239CE0006710C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -36,6 +85,7 @@
 		4BF1A58329A3BF6E00222116 /* XCAssets+Image+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCAssets+Image+Generated.swift"; sourceTree = "<group>"; };
 		4BF1A58629A3C05300222116 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		4BF1A58929A3C60B00222116 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4BF1A58F29A3C89700222116 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		A8092748224EA5F2C8700903 /* Pods-Yummy_App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yummy_App.release.xcconfig"; path = "Target Support Files/Pods-Yummy_App/Pods-Yummy_App.release.xcconfig"; sourceTree = "<group>"; };
 		B3AEE7F1769A9D342A29076D /* Pods_Yummy_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Yummy_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B658FC35432AB9257F3B49BD /* Pods-Yummy_App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yummy_App.debug.xcconfig"; path = "Target Support Files/Pods-Yummy_App/Pods-Yummy_App.debug.xcconfig"; sourceTree = "<group>"; };
@@ -53,6 +103,76 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B50C52D29A3D17B0058D1CE /* Welcome page */ = {
+			isa = PBXGroup;
+			children = (
+				4B50C52E29A3D18B0058D1CE /* View */,
+			);
+			path = "Welcome page";
+			sourceTree = "<group>";
+		};
+		4B50C52E29A3D18B0058D1CE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4B50C52F29A3D1A40058D1CE /* WelcomeVCViewController.swift */,
+				4B50C53329A3D6FB0058D1CE /* OnboardingView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4B50C53829A3D8C20058D1CE /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				4B50C53929A3D8CE0058D1CE /* Fonts.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		4B50C53B29A3D9390058D1CE /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				4B50C53C29A3D9470058D1CE /* Labrada */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		4B50C53C29A3D9470058D1CE /* Labrada */ = {
+			isa = PBXGroup;
+			children = (
+				4B50C53D29A3D9470058D1CE /* Labrada-Italic-VariableFont_wght.ttf */,
+				4B50C53E29A3D9470058D1CE /* static */,
+				4B50C55129A3D9470058D1CE /* Labrada-VariableFont_wght.ttf */,
+				4B50C55229A3D9470058D1CE /* OFL.txt */,
+				4B50C55329A3D9470058D1CE /* README.txt */,
+			);
+			path = Labrada;
+			sourceTree = "<group>";
+		};
+		4B50C53E29A3D9470058D1CE /* static */ = {
+			isa = PBXGroup;
+			children = (
+				4B50C53F29A3D9470058D1CE /* Labrada-Italic.ttf */,
+				4B50C54029A3D9470058D1CE /* Labrada-ThinItalic.ttf */,
+				4B50C54129A3D9470058D1CE /* Labrada-LightItalic.ttf */,
+				4B50C54229A3D9470058D1CE /* Labrada-ExtraLight.ttf */,
+				4B50C54329A3D9470058D1CE /* Labrada-BoldItalic.ttf */,
+				4B50C54429A3D9470058D1CE /* Labrada-Light.ttf */,
+				4B50C54529A3D9470058D1CE /* Labrada-ExtraLightItalic.ttf */,
+				4B50C54629A3D9470058D1CE /* Labrada-SemiBold.ttf */,
+				4B50C54729A3D9470058D1CE /* Labrada-BlackItalic.ttf */,
+				4B50C54829A3D9470058D1CE /* Labrada-Regular.ttf */,
+				4B50C54929A3D9470058D1CE /* Labrada-ExtraBoldItalic.ttf */,
+				4B50C54A29A3D9470058D1CE /* Labrada-SemiBoldItalic.ttf */,
+				4B50C54B29A3D9470058D1CE /* Labrada-ExtraBold.ttf */,
+				4B50C54C29A3D9470058D1CE /* Labrada-Medium.ttf */,
+				4B50C54D29A3D9470058D1CE /* Labrada-MediumItalic.ttf */,
+				4B50C54E29A3D9470058D1CE /* Labrada-Black.ttf */,
+				4B50C54F29A3D9470058D1CE /* Labrada-Thin.ttf */,
+				4B50C55029A3D9470058D1CE /* Labrada-Bold.ttf */,
+			);
+			path = static;
+			sourceTree = "<group>";
+		};
 		4B9B344229A239CD0006710C = {
 			isa = PBXGroup;
 			children = (
@@ -75,14 +195,14 @@
 		4B9B344D29A239CD0006710C /* Yummy_App */ = {
 			isa = PBXGroup;
 			children = (
+				4BF1A58B29A3C83400222116 /* App */,
+				4BF1A58E29A3C88100222116 /* Extensions */,
+				4B50C53829A3D8C20058D1CE /* Constants */,
+				4B50C53B29A3D9390058D1CE /* Fonts */,
+				4BF1A58A29A3C81600222116 /* Resources */,
 				4BF1A58129A3BF6E00222116 /* Generated */,
 				4BF1A57B29A3BDB400222116 /* Localizable */,
 				4BD2F3BB29A3517F00126309 /* Assets */,
-				4B9B344E29A239CD0006710C /* AppDelegate.swift */,
-				4B9B345029A239CD0006710C /* SceneDelegate.swift */,
-				4B9B345229A239CD0006710C /* ViewController.swift */,
-				4B9B345429A239CD0006710C /* Main.storyboard */,
-				4B9B345929A239CE0006710C /* LaunchScreen.storyboard */,
 				4B9B345C29A239CE0006710C /* Info.plist */,
 			);
 			path = Yummy_App;
@@ -112,6 +232,49 @@
 				4BF1A58329A3BF6E00222116 /* XCAssets+Image+Generated.swift */,
 			);
 			path = Generated;
+			sourceTree = "<group>";
+		};
+		4BF1A58A29A3C81600222116 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4B9B345929A239CE0006710C /* LaunchScreen.storyboard */,
+				4B9B344E29A239CD0006710C /* AppDelegate.swift */,
+				4B9B345029A239CD0006710C /* SceneDelegate.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4BF1A58B29A3C83400222116 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				4B50C52D29A3D17B0058D1CE /* Welcome page */,
+				4BF1A58C29A3C83A00222116 /* Home page */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		4BF1A58C29A3C83A00222116 /* Home page */ = {
+			isa = PBXGroup;
+			children = (
+				4BF1A58D29A3C84700222116 /* View */,
+			);
+			path = "Home page";
+			sourceTree = "<group>";
+		};
+		4BF1A58D29A3C84700222116 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4B9B345229A239CD0006710C /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4BF1A58E29A3C88100222116 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4BF1A58F29A3C89700222116 /* UIViewController.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		9011DA4CF6BD41E002386766 /* Pods */ = {
@@ -193,11 +356,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BF1A57E29A3BE6700222116 /* Localizable.strings in Resources */,
+				4B50C56629A3D9470058D1CE /* Labrada-Bold.ttf in Resources */,
+				4B50C55C29A3D9470058D1CE /* Labrada-SemiBold.ttf in Resources */,
+				4B50C55A29A3D9470058D1CE /* Labrada-Light.ttf in Resources */,
+				4B50C56229A3D9470058D1CE /* Labrada-Medium.ttf in Resources */,
+				4B50C55B29A3D9470058D1CE /* Labrada-ExtraLightItalic.ttf in Resources */,
 				4B9B345B29A239CE0006710C /* LaunchScreen.storyboard in Resources */,
+				4B50C55E29A3D9470058D1CE /* Labrada-Regular.ttf in Resources */,
+				4B50C56829A3D9470058D1CE /* OFL.txt in Resources */,
 				4B9B345829A239CE0006710C /* Media.xcassets in Resources */,
+				4B50C56929A3D9470058D1CE /* README.txt in Resources */,
+				4B50C56329A3D9470058D1CE /* Labrada-MediumItalic.ttf in Resources */,
+				4B50C55929A3D9470058D1CE /* Labrada-BoldItalic.ttf in Resources */,
+				4B50C55729A3D9470058D1CE /* Labrada-LightItalic.ttf in Resources */,
 				4BF1A58729A3C05300222116 /* Colors.xcassets in Resources */,
-				4B9B345629A239CD0006710C /* Main.storyboard in Resources */,
+				4B50C56429A3D9470058D1CE /* Labrada-Black.ttf in Resources */,
+				4B50C56729A3D9470058D1CE /* Labrada-VariableFont_wght.ttf in Resources */,
 				4BD2F3B829A34FE000126309 /* swiftgen.yml in Resources */,
+				4B50C55D29A3D9470058D1CE /* Labrada-BlackItalic.ttf in Resources */,
+				4B50C56129A3D9470058D1CE /* Labrada-ExtraBold.ttf in Resources */,
+				4B50C55429A3D9470058D1CE /* Labrada-Italic-VariableFont_wght.ttf in Resources */,
+				4B50C55529A3D9470058D1CE /* Labrada-Italic.ttf in Resources */,
+				4B50C55829A3D9470058D1CE /* Labrada-ExtraLight.ttf in Resources */,
+				4B50C56029A3D9470058D1CE /* Labrada-SemiBoldItalic.ttf in Resources */,
+				4B50C55629A3D9470058D1CE /* Labrada-ThinItalic.ttf in Resources */,
+				4B50C55F29A3D9470058D1CE /* Labrada-ExtraBoldItalic.ttf in Resources */,
+				4B50C56529A3D9470058D1CE /* Labrada-Thin.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,23 +437,19 @@
 			files = (
 				4B9B345329A239CD0006710C /* ViewController.swift in Sources */,
 				4B9B344F29A239CD0006710C /* AppDelegate.swift in Sources */,
+				4B50C53029A3D1A40058D1CE /* WelcomeVCViewController.swift in Sources */,
+				4BF1A59029A3C89700222116 /* UIViewController.swift in Sources */,
 				4B9B345129A239CD0006710C /* SceneDelegate.swift in Sources */,
+				4B50C53429A3D6FB0058D1CE /* OnboardingView.swift in Sources */,
 				4BF1A58529A3BF6E00222116 /* XCAssets+Image+Generated.swift in Sources */,
 				4BF1A58429A3BF6E00222116 /* Strings.swift in Sources */,
+				4B50C53A29A3D8CE0058D1CE /* Fonts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		4B9B345429A239CD0006710C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4B9B345529A239CD0006710C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4B9B345929A239CE0006710C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -419,7 +599,7 @@
 				INFOPLIST_FILE = Yummy_App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -448,7 +628,7 @@
 				INFOPLIST_FILE = Yummy_App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
