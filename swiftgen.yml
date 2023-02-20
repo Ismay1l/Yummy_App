@@ -4,7 +4,14 @@ output_dir: Yummy_App/Generated/
 xcassets:
     inputs:
       - Assets/Media.xcassets
-      # - Assets/Colors.xcassets
+      - Assets/Colors.xcassets
     outputs:
       templateName: swift5
       output: XCAssets+Image+Generated.swift
+
+
+strings:
+  inputs: Localizable/en.lproj
+  outputs:
+    templateName: structured-swift5
+    output: Strings.swift
