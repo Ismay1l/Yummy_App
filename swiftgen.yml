@@ -15,3 +15,9 @@ strings:
   outputs:
     templateName: structured-swift5
     output: Strings.swift
+
+fonts:
+  inputs: Labrada
+  outputs:
+    templateName: swift5
+    output: Fonts.swift

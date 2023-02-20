@@ -8,4 +8,4 @@
 import UIKit
 
 //MARK: - Medium 
-let medium = UIFont(name: FontFamily.Labrada.medium.name, size: 22)
+let medium = UIFont(font: FontFamily.Labrada.medium, size: 22)
