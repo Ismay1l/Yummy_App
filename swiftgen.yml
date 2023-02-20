@@ -1,0 +1,10 @@
+input_dir: Yummy_App/
+output_dir: Yummy_App/Generated/
+
+xcassets:
+    inputs:
+      - Assets/Media.xcassets
+      # - Assets/Colors.xcassets
+    outputs:
+      templateName: swift5
+      output: XCAssets+Image+Generated.swift
