@@ -7,3 +7,12 @@
 */
 
 "title_next_button" = "Next";
+"title_next_button_did_set" = "Get Started";
+
+"title_slide_1" = "Delicious dishes";
+"title_slide_2" = "World-Class chefs";
+"title_slide_3" = "Instant Worldwide Delivery";
+
+"description_slide_1" = "Experience a variaty of amazing dishes from different cultures around the world.";
+"description_slide_2" = "Our dishes are prepared by only the best.";
+"description_slide_3" = "Your order will be delivered instantly irrespective of your location around the world.";

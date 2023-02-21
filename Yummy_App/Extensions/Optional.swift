@@ -9,7 +9,7 @@ import UIKit
 
 extension Optional where Wrapped == UIFont {
     
-    var isFontMedium: UIFont {
+    var isFontNil: UIFont {
         self ?? UIFont.systemFont(ofSize: 22, weight: .medium)
     }
 }
