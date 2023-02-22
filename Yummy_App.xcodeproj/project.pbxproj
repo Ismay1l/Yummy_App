@@ -33,6 +33,9 @@
 		4BDB8E2E29A6680A00FA753F /* PopularDishesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDB8E2D29A6680A00FA753F /* PopularDishesCell.swift */; };
 		4BDB8E3029A6681900FA753F /* ChefsSpecialCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDB8E2F29A6681900FA753F /* ChefsSpecialCell.swift */; };
 		4BDB8E3229A6690300FA753F /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDB8E3129A6690300FA753F /* HeaderView.swift */; };
+		4BDB8E3529A68AE200FA753F /* FoodCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDB8E3429A68AE200FA753F /* FoodCategory.swift */; };
+		4BDB8E3729A68CA200FA753F /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDB8E3629A68CA200FA753F /* String.swift */; };
+		4BDB8E3B29A6981900FA753F /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDB8E3A29A6981900FA753F /* Dish.swift */; };
 		4BF1A57E29A3BE6700222116 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4BF1A58029A3BE6700222116 /* Localizable.strings */; };
 		4BF1A58729A3C05300222116 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BF1A58629A3C05300222116 /* Colors.xcassets */; };
 		4BF1A59029A3C89700222116 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF1A58F29A3C89700222116 /* UIViewController.swift */; };
@@ -70,6 +73,9 @@
 		4BDB8E2D29A6680A00FA753F /* PopularDishesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularDishesCell.swift; sourceTree = "<group>"; };
 		4BDB8E2F29A6681900FA753F /* ChefsSpecialCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChefsSpecialCell.swift; sourceTree = "<group>"; };
 		4BDB8E3129A6690300FA753F /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		4BDB8E3429A68AE200FA753F /* FoodCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCategory.swift; sourceTree = "<group>"; };
+		4BDB8E3629A68CA200FA753F /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		4BDB8E3A29A6981900FA753F /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
 		4BF1A57F29A3BE6700222116 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		4BF1A58629A3C05300222116 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		4BF1A58929A3C60B00222116 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -117,9 +123,9 @@
 		4B50C53829A3D8C20058D1CE /* Constants */ = {
 			isa = PBXGroup;
 			children = (
+				4BF2ABA729A50EB2001AEF18 /* Functions.swift */,
 				4B50C57129A3DE100058D1CE /* Custom fonts.swift */,
 				4BF2ABA529A50C46001AEF18 /* Enums.swift */,
-				4BF2ABA729A50EB2001AEF18 /* Functions.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -220,6 +226,15 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		4BDB8E3329A68AD100FA753F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4BDB8E3429A68AE200FA753F /* FoodCategory.swift */,
+				4BDB8E3A29A6981900FA753F /* Dish.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		4BF1A57B29A3BDB400222116 /* Localizable */ = {
 			isa = PBXGroup;
 			children = (
@@ -250,6 +265,7 @@
 		4BF1A58C29A3C83A00222116 /* Home page */ = {
 			isa = PBXGroup;
 			children = (
+				4BDB8E3329A68AD100FA753F /* Model */,
 				4BF1A58D29A3C84700222116 /* View */,
 			);
 			path = "Home page";
@@ -270,6 +286,7 @@
 			children = (
 				4BF1A58F29A3C89700222116 /* UIViewController.swift */,
 				4B9862DA29A3E24E00FE406A /* Optional.swift */,
+				4BDB8E3629A68CA200FA753F /* String.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -322,11 +339,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4B9B345F29A239CE0006710C /* Build configuration list for PBXNativeTarget "Yummy_App" */;
 			buildPhases = (
-				4BF1A58829A3C46D00222116 /* SwiftGen */,
 				69265441193F75069518B9DC /* [CP] Check Pods Manifest.lock */,
+				4BF1A58829A3C46D00222116 /* SwiftGen */,
 				4B9B344729A239CD0006710C /* Sources */,
 				4B9B344829A239CD0006710C /* Frameworks */,
 				4B9B344929A239CD0006710C /* Resources */,
+				C54F88BEE44549DCD02B28A2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -433,6 +451,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		C54F88BEE44549DCD02B28A2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Yummy_App/Pods-Yummy_App-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Yummy_App/Pods-Yummy_App-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Yummy_App/Pods-Yummy_App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -442,10 +477,12 @@
 			files = (
 				4B9B345329A239CD0006710C /* HomeVC.swift in Sources */,
 				4B9B344F29A239CD0006710C /* AppDelegate.swift in Sources */,
+				4BDB8E3729A68CA200FA753F /* String.swift in Sources */,
 				4B50C56E29A3DD0A0058D1CE /* Strings.swift in Sources */,
 				4BDB8E2C29A667FC00FA753F /* FoodCategoryCell.swift in Sources */,
 				4BF2ABA829A50EB2001AEF18 /* Functions.swift in Sources */,
 				4B50C53029A3D1A40058D1CE /* WelcomeVCViewController.swift in Sources */,
+				4BDB8E3B29A6981900FA753F /* Dish.swift in Sources */,
 				4BDB8E2E29A6680A00FA753F /* PopularDishesCell.swift in Sources */,
 				4BF1A59029A3C89700222116 /* UIViewController.swift in Sources */,
 				4B9B345129A239CD0006710C /* SceneDelegate.swift in Sources */,
@@ -457,6 +494,7 @@
 				4BDB8E2729A6657D00FA753F /* FoodCollectionView.swift in Sources */,
 				4BF2AB9E29A506C2001AEF18 /* OnboardingSlide.swift in Sources */,
 				4B50C57229A3DE100058D1CE /* Custom fonts.swift in Sources */,
+				4BDB8E3529A68AE200FA753F /* FoodCategory.swift in Sources */,
 				4B50C53429A3D6FB0058D1CE /* OnboardingView.swift in Sources */,
 				4B50C56F29A3DD0A0058D1CE /* Fonts.swift in Sources */,
 				4B50C57029A3DD0A0058D1CE /* XCAssets+Image+Generated.swift in Sources */,

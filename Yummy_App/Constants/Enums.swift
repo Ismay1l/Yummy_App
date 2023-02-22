@@ -31,20 +31,26 @@ enum CollectionViewCellIDs {
 //MARK: Fonts
 enum Fonts {
     
-    case medium22, medium25,
-         regular22,
+    case medium20, medium22, medium25,
+         regular16, regular18, regular20,
          semibold30
     
     var font: UIFont {
         switch self {
         case .medium22:
             return medium_22.isFontNil
-        case .regular22:
-            return regular_22.isFontNil
+        case .regular20:
+            return regular_20.isFontNil
         case .semibold30:
             return semibold_30.isFontNil
         case .medium25:
             return medium_25.isFontNil
+        case .regular16:
+            return regular_16.isFontNil
+        case .medium20:
+            return medium_20.isFontNil
+        case .regular18:
+            return regular_18.isFontNil
         }
     }
 }

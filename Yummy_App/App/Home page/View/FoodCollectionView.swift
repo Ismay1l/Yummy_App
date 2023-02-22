@@ -65,23 +65,31 @@ class FoodCollectionView: UIView {
             //Item
             let item = NSCollectionLayoutItem(
                 layoutSize: NSCollectionLayoutSize(
-                    widthDimension: .fractionalWidth(1.0),
+                    widthDimension: .absolute(200),
                     heightDimension: .fractionalHeight(1.0)
                 )
             )
             item.contentInsets = NSDirectionalEdgeInsets(top: 5, leading: 5, bottom: 10, trailing: 5)
             
+            let verticalGroup = NSCollectionLayoutGroup.vertical(
+                layoutSize: NSCollectionLayoutSize(
+                    widthDimension: .fractionalWidth(1.0),
+                    heightDimension: .absolute(100)),
+                repeatingSubitem: item,
+                count: 2
+            )
+            
             //Horizontal group
             let horizontalGroup = NSCollectionLayoutGroup.horizontal(
                 layoutSize: NSCollectionLayoutSize(
-                    widthDimension: .fractionalWidth(0.92),
-                    heightDimension: .absolute(390)),
-                repeatingSubitem: item,
-                count: 1)
+                    widthDimension: .absolute(200),
+                    heightDimension: .absolute(200)),
+                repeatingSubitem: verticalGroup,
+                count: 2)
             
             //Section
             let section = NSCollectionLayoutSection(group: horizontalGroup)
-            section.orthogonalScrollingBehavior = .groupPagingCentered
+            section.orthogonalScrollingBehavior = .continuousGroupLeadingBoundary
             section.boundarySupplementaryItems = supplementaryViews
             return section
         case 1:
@@ -89,7 +97,7 @@ class FoodCollectionView: UIView {
             let item = NSCollectionLayoutItem(
                 layoutSize: NSCollectionLayoutSize(
                     widthDimension: .absolute(200),
-                    heightDimension: .absolute(240)
+                    heightDimension: .fractionalHeight(1.0)
                 )
             )
             item.contentInsets = NSDirectionalEdgeInsets(top: 5, leading: 4, bottom: 10, trailing: 4)
@@ -98,7 +106,7 @@ class FoodCollectionView: UIView {
             let group = NSCollectionLayoutGroup.horizontal(
                 layoutSize: NSCollectionLayoutSize(
                     widthDimension: .absolute(200),
-                    heightDimension: .absolute(240)),
+                    heightDimension: .absolute(300)),
                 repeatingSubitem: item,
                 count: 1)
             
@@ -108,27 +116,26 @@ class FoodCollectionView: UIView {
             section.boundarySupplementaryItems = supplementaryViews
             return section
         case 2:
-            
             //Item
             let item = NSCollectionLayoutItem(
                 layoutSize: NSCollectionLayoutSize(
-                    widthDimension: .absolute(200),
-                    heightDimension: .absolute(240)
+                    widthDimension: .fractionalWidth(1.0),
+                    heightDimension: .fractionalHeight(1.0)
                 )
             )
-            item.contentInsets = NSDirectionalEdgeInsets(top: 5, leading: 4, bottom: 10, trailing: 4)
+            item.contentInsets = NSDirectionalEdgeInsets(top: 5, leading: 5, bottom: 10, trailing: 5)
             
-            //Group
-            let group = NSCollectionLayoutGroup.horizontal(
+            //Horizontal group
+            let horizontalGroup = NSCollectionLayoutGroup.horizontal(
                 layoutSize: NSCollectionLayoutSize(
-                    widthDimension: .absolute(200),
-                    heightDimension: .absolute(240)),
+                    widthDimension: .fractionalWidth(1.0),
+                    heightDimension: .absolute(130)),
                 repeatingSubitem: item,
                 count: 1)
             
             //Section
-            let section = NSCollectionLayoutSection(group: group)
-            section.orthogonalScrollingBehavior = .continuous
+            let section = NSCollectionLayoutSection(group: horizontalGroup)
+            section.orthogonalScrollingBehavior = .paging
             section.boundarySupplementaryItems = supplementaryViews
             return section
         default:
@@ -165,7 +172,7 @@ extension FoodCollectionView: UICollectionViewDataSource,
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         switch section {
         case 0:
-            return 3
+            return 30
         case 1:
             return 4
         case 2:
@@ -179,19 +186,19 @@ extension FoodCollectionView: UICollectionViewDataSource,
         switch indexPath.section {
         case 0:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CollectionViewCellIDs.foodCategory.identifier, for: indexPath) as! FoodCategoryCell
-            cell.setupCell(with: "Hello")
+            cell.setupCell(with: FoodCategory(id: "1", name: "hhhh", image: "https://fastly.picsum.photos/id/598/100/200.jpg?hmac=5KXzmpWyfHjAPPA3AJR7JD0WMHCmKNT1EJat79NVhRc"))
             cell.layer.cornerRadius = 16
             cell.clipsToBounds = true
             return cell
         case 1:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CollectionViewCellIDs.popularDishes.identifier, for: indexPath) as! PopularDishesCell
-            cell.setupCell(with: "Hey")
+            cell.setupCell(with: Dish(id: "1", name: "Yagis", description: "aahahahhahahahahahahahhaahahhahahahahahahahahahahahhahahahahahahahahahhahahahahahahahahaahah", image: "https://fastly.picsum.photos/id/598/100/200.jpg?hmac=5KXzmpWyfHjAPPA3AJR7JD0WMHCmKNT1EJat79NVhRc", calories: 87.9))
             cell.layer.cornerRadius = 16
             cell.clipsToBounds = true
             return cell
         case 2:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CollectionViewCellIDs.chefsSpecial.identifier, for: indexPath) as! ChefsSpecialCell
-            cell.setupCell(with: "Hi")
+            cell.setupCell(with: Dish(id: "1", name: "Yagis", description: "aahahahhahahahahahahahhaahahhahahahahahahahahahahahhahahahahahahahahahhahahahahahahahahaahah", image: "https://fastly.picsum.photos/id/598/100/200.jpg?hmac=5KXzmpWyfHjAPPA3AJR7JD0WMHCmKNT1EJat79NVhRc", calories: 87.9))
             cell.layer.cornerRadius = 16
             cell.clipsToBounds = true
             return cell

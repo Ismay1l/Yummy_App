@@ -32,6 +32,7 @@ internal enum Asset {
     internal static let lightText = ColorAsset(name: "LightText")
     internal static let nextButtonBackground = ColorAsset(name: "NextButtonBackground")
     internal static let red = ColorAsset(name: "Red")
+    internal static let systemGray = ColorAsset(name: "SystemGray")
     internal static let pageControlTintColor = ColorAsset(name: "pageControlTintColor")
   }
   internal enum Media {

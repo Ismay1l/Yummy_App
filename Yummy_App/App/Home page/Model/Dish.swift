@@ -1,5 +1,5 @@
 //
-//  PopularDish.swift
+//  Dish.swift
 //  Yummy_App
 //
 //  Created by Ismayil Ismayilov on 22.02.23.

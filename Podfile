@@ -8,4 +8,5 @@ target 'Yummy_App' do
   # Pods for Yummy_App
 
 pod 'SwiftGen'
+pod 'Kingfisher', '~> 7.0'
 end

@@ -1,16 +1,20 @@
 PODS:
+  - Kingfisher (7.2.3)
   - SwiftGen (6.6.2)
 
 DEPENDENCIES:
+  - Kingfisher (~> 7.0)
   - SwiftGen
 
 SPEC REPOS:
   trunk:
+    - Kingfisher
     - SwiftGen
 
 SPEC CHECKSUMS:
+  Kingfisher: 8c2cbe0c11ea4d481542895112682a99e058468e
   SwiftGen: 1366a7f71aeef49954ca5a63ba4bef6b0f24138c
 
-PODFILE CHECKSUM: 8f64f3e3c999c6444a7b800368229cd11a599373
+PODFILE CHECKSUM: 61cb4bacfe1ffa1a09686a323578d6a08c654be8
 
 COCOAPODS: 1.11.3

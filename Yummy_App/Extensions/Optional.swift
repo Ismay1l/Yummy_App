@@ -13,3 +13,17 @@ extension Optional where Wrapped == UIFont {
         self ?? UIFont.systemFont(ofSize: 22, weight: .medium)
     }
 }
+
+extension Optional where Wrapped == String {
+    
+    var isEmptyOrNil: String {
+        self ?? ""
+    }
+}
+
+extension Optional where Wrapped == Double {
+    
+    var isEmptyOrNil: Double {
+        self ?? 0.0
+    }
+}
