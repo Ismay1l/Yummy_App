@@ -30,3 +30,36 @@ extension UIViewController {
         }
     }
 }
+
+extension UIViewController {
+    
+    var safeLeft: NSLayoutXAxisAnchor {
+        view.safeAreaLayoutGuide.leftAnchor
+    }
+    
+    var safeRight: NSLayoutXAxisAnchor {
+        view.safeAreaLayoutGuide.rightAnchor
+    }
+    
+    var safeTop: NSLayoutYAxisAnchor {
+        view.safeAreaLayoutGuide.topAnchor
+    }
+    
+    var safeBottom: NSLayoutYAxisAnchor {
+        view.safeAreaLayoutGuide.bottomAnchor
+    }
+    
+    var safeArea: UILayoutGuide {
+        view.safeAreaLayoutGuide
+    }
+    
+    func setBackButton() {
+        let item = UIBarButtonItem(title: " ", style: .plain, target: nil, action: nil)
+        item.tintColor = Asset.Colors.blackLabel.color
+        navigationItem.backBarButtonItem = item
+    }
+    
+    func hideBackButton() {
+        navigationItem.hidesBackButton = true
+    }
+}

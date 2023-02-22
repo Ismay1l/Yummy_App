@@ -7,18 +7,28 @@
 
 import UIKit
 
-enum CollectionViewIDs {
+//MARK: CollectionViewIDs
+enum CollectionViewCellIDs {
     
-    case onboardingCell
+    case onboarding, foodCategory, popularDishes, chefsSpecial, header
     
-    var description: String {
+    var identifier: String {
         switch self {
-        case .onboardingCell:
+        case .onboarding:
             return "onboarding_cell"
+        case .foodCategory:
+            return "foodCategory_cell"
+        case .popularDishes:
+            return "popularDishes_cell"
+        case .chefsSpecial:
+            return "chefsSpecial_cell"
+        case .header:
+            return "header_cell"
         }
     }
 }
 
+//MARK: Fonts
 enum Fonts {
     
     case medium22, medium25,
@@ -39,6 +49,7 @@ enum Fonts {
     }
 }
 
+//MARK: NotificationName
 enum NotificationName {
     
     case backToWelcomeVC
@@ -47,6 +58,22 @@ enum NotificationName {
         switch self {
         case .backToWelcomeVC:
             return "User tapped back to WelcomeVC"
+        }
+    }
+}
+
+//MARK: - CollectionVewHeaderView
+enum CollectionVewHeaderType {
+    case foodCategory, popularDishes, chefsSpecial
+    
+    var title: String {
+        switch self {
+        case .foodCategory:
+            return L10n.titleFoodCategoryCell
+        case .popularDishes:
+            return L10n.titlePopularDishesCell
+        case .chefsSpecial:
+            return L10n.titleChefsSpecialCell
         }
     }
 }

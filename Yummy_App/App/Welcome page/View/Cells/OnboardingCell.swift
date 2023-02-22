@@ -9,6 +9,7 @@ import UIKit
 
 class OnboardingCell: UICollectionViewCell {
     
+    //MARK: - UI Elements
     private lazy var titleLabel = createLabel(with: Asset.Colors.blackLabel.color, fontName: .semibold30, numberOfLines: 0, textAlignment: .left)
     
     private lazy var slideImage: UIImageView = {
@@ -48,8 +49,7 @@ class OnboardingCell: UICollectionViewCell {
             
             descriptionLabel.leftAnchor.constraint(equalTo: contentView.leftAnchor, constant: 10),
             descriptionLabel.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: -10),
-            descriptionLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 0),
-//            descriptionLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor)
+            descriptionLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 0)
         ])
     }
     

@@ -22,8 +22,8 @@ class WelcomeVC: UIViewController {
         super.viewDidLoad()
         
         layoutViews()
-        setUpBackBarButton()
         addNotificationObserver()
+        setBackButton()
     }
     
     //MARK: - Functions
@@ -31,22 +31,18 @@ class WelcomeVC: UIViewController {
         view.addSubview(onboardingView)
         
         NSLayoutConstraint.activate([
-            onboardingView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
-            onboardingView.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor),
-            onboardingView.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor),
-            onboardingView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
+            onboardingView.topAnchor.constraint(equalTo: safeTop),
+            onboardingView.leftAnchor.constraint(equalTo: safeLeft),
+            onboardingView.rightAnchor.constraint(equalTo: safeRight),
+            onboardingView.bottomAnchor.constraint(equalTo: safeBottom),
         ])
-    }
-    
-    private func setUpBackBarButton() {
-        let item = UIBarButtonItem(title: " ", style: .plain, target: nil, action: nil)
-        item.tintColor = Asset.Colors.blackLabel.color
-        self.navigationItem.backBarButtonItem = item
     }
     
     private func addNotificationObserver() {
         NotificationCenter.default.addObserver(self,
-                                               selector: #selector(receiveNotification), name: NSNotification.Name(NotificationName.backToWelcomeVC.message), object: nil)
+                                               selector: #selector(receiveNotification),
+                                               name: NSNotification.Name(NotificationName.backToWelcomeVC.message),
+                                               object: nil)
     }
     
     @objc
@@ -57,14 +53,13 @@ class WelcomeVC: UIViewController {
     }
 }
 
+//MARK: - Extension
 extension WelcomeVC: OnboardingViewDelegate {
     
     func didTapGetStarted() {
         let homeVC = HomeVC()
-        homeVC.title = "Home"
+        homeVC.title = L10n.titleHomePage
         homeVC.navigationItem.largeTitleDisplayMode = .never
-        let item = UIBarButtonItem(title: " ", style: .plain, target: nil, action: nil)
-        homeVC.navigationItem.backBarButtonItem = item
         navigationController?.pushViewController(homeVC, animated: true)
     }
 }

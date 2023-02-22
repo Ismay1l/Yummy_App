@@ -28,6 +28,11 @@
 		4B9B345829A239CE0006710C /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B9B345729A239CE0006710C /* Media.xcassets */; };
 		4B9B345B29A239CE0006710C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B9B345929A239CE0006710C /* LaunchScreen.storyboard */; };
 		4BD2F3B829A34FE000126309 /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = 4BD2F3B729A34FE000126309 /* swiftgen.yml */; };
+		4BDB8E2729A6657D00FA753F /* FoodCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDB8E2629A6657D00FA753F /* FoodCollectionView.swift */; };
+		4BDB8E2C29A667FC00FA753F /* FoodCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDB8E2B29A667FC00FA753F /* FoodCategoryCell.swift */; };
+		4BDB8E2E29A6680A00FA753F /* PopularDishesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDB8E2D29A6680A00FA753F /* PopularDishesCell.swift */; };
+		4BDB8E3029A6681900FA753F /* ChefsSpecialCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDB8E2F29A6681900FA753F /* ChefsSpecialCell.swift */; };
+		4BDB8E3229A6690300FA753F /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDB8E3129A6690300FA753F /* HeaderView.swift */; };
 		4BF1A57E29A3BE6700222116 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4BF1A58029A3BE6700222116 /* Localizable.strings */; };
 		4BF1A58729A3C05300222116 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BF1A58629A3C05300222116 /* Colors.xcassets */; };
 		4BF1A59029A3C89700222116 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF1A58F29A3C89700222116 /* UIViewController.swift */; };
@@ -60,6 +65,11 @@
 		4B9B345A29A239CE0006710C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B9B345C29A239CE0006710C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4BD2F3B729A34FE000126309 /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
+		4BDB8E2629A6657D00FA753F /* FoodCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCollectionView.swift; sourceTree = "<group>"; };
+		4BDB8E2B29A667FC00FA753F /* FoodCategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCategoryCell.swift; sourceTree = "<group>"; };
+		4BDB8E2D29A6680A00FA753F /* PopularDishesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularDishesCell.swift; sourceTree = "<group>"; };
+		4BDB8E2F29A6681900FA753F /* ChefsSpecialCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChefsSpecialCell.swift; sourceTree = "<group>"; };
+		4BDB8E3129A6690300FA753F /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		4BF1A57F29A3BE6700222116 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		4BF1A58629A3C05300222116 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		4BF1A58929A3C60B00222116 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -199,6 +209,17 @@
 			path = Assets;
 			sourceTree = "<group>";
 		};
+		4BDB8E2A29A667E500FA753F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4BDB8E2B29A667FC00FA753F /* FoodCategoryCell.swift */,
+				4BDB8E2D29A6680A00FA753F /* PopularDishesCell.swift */,
+				4BDB8E2F29A6681900FA753F /* ChefsSpecialCell.swift */,
+				4BDB8E3129A6690300FA753F /* HeaderView.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		4BF1A57B29A3BDB400222116 /* Localizable */ = {
 			isa = PBXGroup;
 			children = (
@@ -237,7 +258,9 @@
 		4BF1A58D29A3C84700222116 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4BDB8E2A29A667E500FA753F /* Cells */,
 				4B9B345229A239CD0006710C /* HomeVC.swift */,
+				4BDB8E2629A6657D00FA753F /* FoodCollectionView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -420,19 +443,24 @@
 				4B9B345329A239CD0006710C /* HomeVC.swift in Sources */,
 				4B9B344F29A239CD0006710C /* AppDelegate.swift in Sources */,
 				4B50C56E29A3DD0A0058D1CE /* Strings.swift in Sources */,
+				4BDB8E2C29A667FC00FA753F /* FoodCategoryCell.swift in Sources */,
 				4BF2ABA829A50EB2001AEF18 /* Functions.swift in Sources */,
 				4B50C53029A3D1A40058D1CE /* WelcomeVCViewController.swift in Sources */,
+				4BDB8E2E29A6680A00FA753F /* PopularDishesCell.swift in Sources */,
 				4BF1A59029A3C89700222116 /* UIViewController.swift in Sources */,
 				4B9B345129A239CD0006710C /* SceneDelegate.swift in Sources */,
 				4B9862DB29A3E24E00FE406A /* Optional.swift in Sources */,
 				4BF2ABA629A50C46001AEF18 /* Enums.swift in Sources */,
 				4B9862DD29A3E46100FE406A /* CapsuleButton.swift in Sources */,
 				4BF2ABA429A50BFD001AEF18 /* OnboardingCell.swift in Sources */,
+				4BDB8E3229A6690300FA753F /* HeaderView.swift in Sources */,
+				4BDB8E2729A6657D00FA753F /* FoodCollectionView.swift in Sources */,
 				4BF2AB9E29A506C2001AEF18 /* OnboardingSlide.swift in Sources */,
 				4B50C57229A3DE100058D1CE /* Custom fonts.swift in Sources */,
 				4B50C53429A3D6FB0058D1CE /* OnboardingView.swift in Sources */,
 				4B50C56F29A3DD0A0058D1CE /* Fonts.swift in Sources */,
 				4B50C57029A3DD0A0058D1CE /* XCAssets+Image+Generated.swift in Sources */,
+				4BDB8E3029A6681900FA753F /* ChefsSpecialCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

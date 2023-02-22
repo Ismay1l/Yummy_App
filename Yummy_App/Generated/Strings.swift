@@ -16,6 +16,12 @@ internal enum L10n {
   internal static let descriptionSlide2 = L10n.tr("Localizable", "description_slide_2", fallback: "Our dishes are prepared by only the best.")
   /// Your order will be delivered instantly irrespective of your location around the world.
   internal static let descriptionSlide3 = L10n.tr("Localizable", "description_slide_3", fallback: "Your order will be delivered instantly irrespective of your location around the world.")
+  /// Chefs Special
+  internal static let titleChefsSpecialCell = L10n.tr("Localizable", "title_chefs_special_cell", fallback: "Chefs Special")
+  /// Food Category
+  internal static let titleFoodCategoryCell = L10n.tr("Localizable", "title_food_category_cell", fallback: "Food Category")
+  /// Yummy
+  internal static let titleHomePage = L10n.tr("Localizable", "title_home_page", fallback: "Yummy")
   /// Localizable.strings
   ///   Yummy_App
   /// 
@@ -23,6 +29,8 @@ internal enum L10n {
   internal static let titleNextButton = L10n.tr("Localizable", "title_next_button", fallback: "Next")
   /// Get Started
   internal static let titleNextButtonDidSet = L10n.tr("Localizable", "title_next_button_did_set", fallback: "Get Started")
+  /// Popular Dishes
+  internal static let titlePopularDishesCell = L10n.tr("Localizable", "title_popular_dishes_cell", fallback: "Popular Dishes")
   /// Delicious dishes
   internal static let titleSlide1 = L10n.tr("Localizable", "title_slide_1", fallback: "Delicious dishes")
   /// World-Class chefs

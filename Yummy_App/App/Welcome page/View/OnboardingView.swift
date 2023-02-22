@@ -40,9 +40,9 @@ class OnboardingView: UIView {
     
     private lazy var pageControl: UIPageControl = {
         let pageControl = UIPageControl()
-        pageControl.numberOfPages = 3
+        pageControl.numberOfPages = slides.count
         pageControl.currentPage = 0
-        pageControl.currentPageIndicatorTintColor = Asset.Colors.pageControlCurrent.color
+        pageControl.currentPageIndicatorTintColor = Asset.Colors.red.color
         pageControl.pageIndicatorTintColor = Asset.Colors.pageControlTintColor.color
         pageControl.backgroundStyle = .minimal
         pageControl.direction = .leftToRight
@@ -60,7 +60,7 @@ class OnboardingView: UIView {
         view.showsHorizontalScrollIndicator = false
         view.isPagingEnabled = true
         
-        view.register(OnboardingCell.self, forCellWithReuseIdentifier: CollectionViewIDs.onboardingCell.description)
+        view.register(OnboardingCell.self, forCellWithReuseIdentifier: CollectionViewCellIDs.onboarding.identifier)
         
         view.dataSource = self
         view.delegate = self
@@ -71,8 +71,8 @@ class OnboardingView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         backgroundColor = Asset.Colors.background.color
-        setUpUI()
         populateSlides()
+        setupUI()
     }
     
     required init?(coder: NSCoder) {
@@ -80,7 +80,7 @@ class OnboardingView: UIView {
     }
     
     //MARK: - Functions
-    private func setUpUI() {
+    private func setupUI() {
         addSubview(collectionView)
         addSubview(nextButton)
         addSubview(pageControl)
@@ -127,6 +127,7 @@ class OnboardingView: UIView {
     }
 }
 
+//MARK: - Extension
 extension OnboardingView: UICollectionViewDelegate,
                           UICollectionViewDataSource,
                           UICollectionViewDelegateFlowLayout {
@@ -136,7 +137,7 @@ extension OnboardingView: UICollectionViewDelegate,
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CollectionViewIDs.onboardingCell.description, for: indexPath) as! OnboardingCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CollectionViewCellIDs.onboarding.identifier, for: indexPath) as! OnboardingCell
         let slide = slides[indexPath.row]
         cell.setUpCell(with: slide)
         return cell

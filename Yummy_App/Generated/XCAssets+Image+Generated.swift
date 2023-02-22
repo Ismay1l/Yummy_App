@@ -26,10 +26,12 @@ internal typealias AssetImageTypeAlias = ImageAsset.Image
 internal enum Asset {
   internal enum Colors {
     internal static let background = ColorAsset(name: "Background")
+    internal static let black = ColorAsset(name: "Black")
     internal static let blackLabel = ColorAsset(name: "BlackLabel")
+    internal static let lightGray = ColorAsset(name: "LightGray")
     internal static let lightText = ColorAsset(name: "LightText")
     internal static let nextButtonBackground = ColorAsset(name: "NextButtonBackground")
-    internal static let pageControlCurrent = ColorAsset(name: "PageControlCurrent")
+    internal static let red = ColorAsset(name: "Red")
     internal static let pageControlTintColor = ColorAsset(name: "pageControlTintColor")
   }
   internal enum Media {

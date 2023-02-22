@@ -16,3 +16,9 @@
 "description_slide_1" = "Experience a variaty of amazing dishes from different cultures around the world.";
 "description_slide_2" = "Our dishes are prepared by only the best.";
 "description_slide_3" = "Your order will be delivered instantly irrespective of your location around the world.";
+
+"title_home_page" = "Yummy";
+
+"title_food_category_cell" = "Food Category";
+"title_popular_dishes_cell" = "Popular Dishes";
+"title_chefs_special_cell" = "Chefs Special";
