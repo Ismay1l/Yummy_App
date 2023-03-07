@@ -22,6 +22,13 @@ class HomeVC: UIViewController {
         hideBackButton()
         setBarButton()
         layoutViews()
+        HomeVM.shared.getCategories { categories in
+            categories.cateories.forEach { print("Category: \($0)")}
+        }
+        
+        HomeVM.shared.getPopularDishes { popular in
+            print("Popular dish count: \(popular.cateories.count)")
+        }
     }
     
     override func viewWillDisappear(_ animated: Bool) {

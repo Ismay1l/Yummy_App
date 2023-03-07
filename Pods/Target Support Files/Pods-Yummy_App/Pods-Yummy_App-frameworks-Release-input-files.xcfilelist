@@ -1,2 +1,4 @@
 ${PODS_ROOT}/Target Support Files/Pods-Yummy_App/Pods-Yummy_App-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
 ${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework
+${BUILT_PRODUCTS_DIR}/Moya/Moya.framework

@@ -8,13 +8,19 @@
 import UIKit
 
 class DetailView: UIView {
-
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    
+    private lazy var nameLabel = createLabel(with: Asset.Colors.blackLabel.color, fontName: .medium20, numberOfLines: 1, textAlignment: .left)
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        backgroundColor = Asset.Colors.background.color
+        setupUI()
     }
-    */
-
+    
+    required init?(coder: NSCoder) {
+        fatalError()
+    }
+    
+    //MARK: - Functions
+    private func setupUI() {}
 }

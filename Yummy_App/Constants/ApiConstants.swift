@@ -6,3 +6,17 @@
 //
 
 import Foundation
+
+enum ApiConstants {
+    
+    case categories, popular
+    
+    var baseURL: String {
+        switch self {
+        case .categories:
+            return "http://0.0.0.0:3000"
+        case .popular:
+            return "http://0.0.0.0:3001"
+        }
+    }
+}

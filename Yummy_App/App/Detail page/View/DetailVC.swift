@@ -8,22 +8,19 @@
 import UIKit
 
 class DetailVC: UIViewController {
+    
+    //MARK: - UI Elements
+    private lazy var foodImageView: UIImageView = {
+        let view = UIImageView()
+        view.contentMode = .scaleToFill
+//        view.layer.cornerRadius = 10
+//        view.clipsToBounds = true
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
 
+    //MARK: - Parent Delegate
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

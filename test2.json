@@ -1,0 +1,68 @@
+{
+  "uuid": "4a3975ae-a2c8-4a7b-96ee-2a6d2a363589",
+  "lastMigration": 20,
+  "name": "Test2",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3001,
+  "hostname": "0.0.0.0",
+  "routes": [
+    {
+      "uuid": "8a42aa84-24f1-438c-ae4a-863bb3943e76",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "popular",
+      "responses": [
+        {
+          "uuid": "d1dab5df-d0e3-4737-8fc2-625e21ff4c1e",
+          "body": "{\n  \"cateories\": [\n    \"Soups\",\n    \"Fastfood\",\n    \"Pizzeria\",\n    \"Desserts\",\n    \"Main dishes\",\n    \"Italian cuisine\"\n    ]\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "randomResponse": false,
+      "sequentialResponse": false
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ]
+}

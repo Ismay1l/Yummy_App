@@ -16,7 +16,12 @@ enum Server {
 extension Server: TargetType {
     
     var baseURL: URL {
-        URL(string: ApiConstants.shared.baseURL)!
+        switch self {
+        case .dishCategories:
+            return URL(string: ApiConstants.categories.baseURL)!
+        case .popularDishes:
+            return URL(string: ApiConstants.popular.baseURL)!
+        }
     }
     
     var path: String {
@@ -44,5 +49,9 @@ extension Server: TargetType {
     
     var headers: [String : String]? {
         return ["Content-Type": "application/json"]
+    }
+    
+    public var validationType: ValidationType {
+        return .successCodes
     }
 }
